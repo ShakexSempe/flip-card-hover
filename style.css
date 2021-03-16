@@ -127,13 +127,13 @@ body{
         justify-content: space-evenly;
         background: #eee;
         margin: 15px auto;
-        padding: 10px;
+        padding: 0px;
         border-radius: 50px;
     }
     .flip-card{
         margin: 5px;
         width: 90%;
-        height: 50%;
+        height: 100%;
         border-radius: 50px;
         overflow: hidden;
     }
