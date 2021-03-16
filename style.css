@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.container{
-    width: 100vw;
+body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+.container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -54,9 +62,43 @@
 
 }
 
+.epl .arsenal .front{
+    background-image: url(images/arsenal.png);
+    box-shadow: -10px 0 5px red;
+}
+.epl .arsenal .back{
+    background-image: url(images/tour-emirates-stadium.jpg);
+    
 
-.front{
-    background-image: url(alfa.jpg)
+}
+
+.epl .city .front{
+    background-image: url(images/mancitylogo.png);
+    box-shadow: 10px 0 5px skyblue;
+
+}
+.epl .city .back{
+    background-image: url(images/manchesterstadium.jpg);
+}
+
+.liga .barca .front{
+    background-image: url(images/barca.png);
+    box-shadow: -10px 0 5px purple;
+
+}
+
+.liga .barca .back{
+    background-image: url(images/campnou.jpg)
+}
+
+.liga .madrid .front{
+    background-image: url(images/real-madrid-clipart-logo-kit-1.jpg);
+    box-shadow: 10px 0 5px #fff;
+
+}
+
+.liga .madrid .back{
+    background-image: url(images/Santiagobernabeupanoramav2.jpg)
 }
 
 @media (min-width: 600px) and (max-width:992px) {
@@ -72,14 +114,20 @@
 }
 
 @media screen and (max-width: 500px) {
+    body{
+        margin: 10px;
+    }
     .container{
+        width: 90%;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         background: #eee;
+        margin: 5px auto;
     }
     .flip-card{
         margin: 5px;
         width: 90%;
-        height: 90%;
+        height: 100%;
     }
 }
