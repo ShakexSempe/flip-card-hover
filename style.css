@@ -28,6 +28,7 @@ body{
     float: left;
 }
 
+
 .flip-card .front, .flip-card .back {
     position: absolute;
     top: 0;
@@ -116,18 +117,49 @@ body{
 @media screen and (max-width: 500px) {
     body{
         margin: 10px;
+        height: auto;
     }
     .container{
         width: 90%;
-        height: 50vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         background: #eee;
-        margin: 5px auto;
+        margin: 15px auto;
+        padding: 10px;
+        border-radius: 50px;
     }
     .flip-card{
         margin: 5px;
         width: 90%;
-        height: 100%;
+        height: 50%;
+        border-radius: 50px;
+        overflow: hidden;
     }
+
+    .epl{
+        background: linear-gradient(45deg, skyblue, #000, red);
+    }
+    .liga{
+        background: linear-gradient(45deg, #eee, #000, brown);
+    }
+    
+.epl .arsenal .front{
+    box-shadow: inset 0 0 10px red;
+}
+
+.epl .city .front{
+    box-shadow: inset 0 0 10px blue;
+}
+
+.liga .barca .front{
+    box-shadow: inset 0 0 10px brown;
+
+}
+.liga .madrid .front{
+    box-shadow: inset 0 0 10px #fff000;
+
+}
+
 }
